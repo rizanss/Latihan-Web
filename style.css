@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Montagu Slab', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 80%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #1b4965;
+}
+section {
+  padding: 2rem 8%;
+}
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 3rem;
+}
+.heading span {
+  color: #62b6cb;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.7rem 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #62b6cb;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  letter-spacing: 0.2rem;
+  color: #62b6cb;
+  background: #fff;
+}
+/* Header */
+.header {
+  background-color: #1b4965;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 8%;
+  border-bottom: 0.5rem solid rgba(255, 255, 255, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.header .logo img {
+  height: 5rem;
+}
+.header .navbar a {
+  margin: 0 0.8rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.header .navbar a:hover {
+  color: #bee9e8;
+  border-bottom: 0.1rem solid #bee9e8;
+  padding: 0.5rem;
+}
+.header .icons {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+.header .icons:hover {
+  color: #bee9e8;
+}
+.header .icons input {
+  width: 20rem;
+  height: 2rem;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+/* Akhir Header */
+/* Home */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../img/clay-banks-TQYTWfN1b7M-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 15%;
+}
+.home .content {
+  max-width: 40rem;
+}
+.home .content h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.home .content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+/* Akhir Home */
+/* About */
+.about .row {
+  display: flex;
+  align-items: center;
+  background: #5fa8d3;
+  flex-wrap: wrap;
+}
+
+.about .row .image {
+  flex: 1 1 40rem;
+}
+
+.about .row .image img {
+  width: 100%;
+  border: 5px solid #5fa8d3;
+}
+.about .row .content {
+  flex: 1 1 40rem;
+  padding: 2rem;
+}
+.about .row .content h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+.about .row .content p {
+  font-size: 1rem;
+  color: #eee;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+/* Akhir About */
+/* Products */
+.products .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.products .container .row {
+  flex: 1 1 25rem;
+  border: 0.1rem solid #bee9e8;
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: #5fa8d3;
+}
+.products .container .row:hover {
+  background-color: #10364e;
+}
+.products .container .row img {
+  max-width: 100%;
+}
+.products .container .row .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 15px;
+}
+.products .container .row .box .price h4 {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.products .container .row .box .price p {
+  color: #eee;
+  font-size: 1rem;
+}
+.products .more {
+  margin: 0 auto;
+}
+.products .garis {
+  border-bottom: 2px dashed #62b6cb;
+  margin: -20px 0;
+}
+/* AkhirProducts */
+/* Review */
+.review .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.review .container .row {
+  flex: 1 1 25rem;
+  border: 0.1rem solid #bee9e8;
+  text-align: center;
+  padding: 10px;
+  background-color: #5fa8d3;
+}
+.review .container .row p {
+  color: #eee;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.review .container .row .user {
+  height: 8rem;
+  width: 8rem;
+}
+.review .container .row h5 {
+  /* padding: 1rem 0; */
+  font-size: 1.5rem;
+  color: #fff;
+}
+.review .container .row .stars i {
+  font-size: 1rem;
+  color: goldenrod;
+}
+.review .container .row i {
+  font-size: 3rem;
+  color: #10364e;
+}
+.review .container i {
+  font-size: 3rem;
+  color: #62b6cb;
+}
+.review .container i:hover {
+  color: #fff;
+}
+/* Akhir Review */
+/* Contact */
+.contact .row {
+  display: flex;
+  background-color: #5fa8d3;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.contact .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.contact .row form h4 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.contact .row form .input {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0.1rem solid #bee9e8;
+}
+.contact .row form .input label {
+  color: #bee9e8;
+  font-size: 1rem;
+  padding-left: 2rem;
+}
+.contact .row form .input input,
+.contact .row form .input textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #000;
+  text-transform: none;
+}
+.footer {
+  background-color: #10364e;
+  text-align: center;
+}
+.footer .sosmed {
+  padding: 0.5rem 0;
+}
+.footer .sosmed a {
+  height: 2rem;
+  width: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0.3rem;
+}
+.footer .sosmed a:hover {
+  color: #5fa8d3;
+}
+.footer .credit {
+  color: #fff;
+}
+/* Akhir Contact */
